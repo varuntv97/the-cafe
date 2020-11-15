@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation | The Cafe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.7/scrollreveal.min.js"
+      integrity="sha512-yrp2XCY0JvwOgu87K/vTN3IIHolfAJL3SMsFu0ujdKeWWMmFhClABdlxna2TfOhMqX49GbmsIpbZ6fVBE7gleQ=="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <a href="index.html" class="logo"
+            ><img src="images/logo1.png" alt="logo"
+          /></a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="menu.html" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="reservation.html" class="nav-link">Reservations</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h2 class="sub-headline">
+          <span class="first-letter">W</span>elcome to,
+        </h2>
+        <h1 class="headline">The Cafe</h1>
+        <div class="headline-description">
+          <div class="seperator">
+            <div class="line line-left"></div>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            <div class="line line-right"></div>
+          </div>
+          <div class="single-animation">
+            <h5>Make a reservation</h5>
+            <a href="#reservation" class="btn cta-btn">Book Table</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reservation -->
+    <section id="reservation" class="reservation">
+      <div class="reservation-card animate-top">
+        <h2>Book your table now.</h2>
+        <div class="container">
+          <div class="card-content">
+            <h3>Reservation.</h3>
+            <form>
+              <div class="form-row">
+                <select name="days">
+                  <option value="day-select">Select Day</option>
+                  <option value="sunday">Sunday</option>
+                  <option value="monday">Monday</option>
+                  <option value="tuesday">Tuesday</option>
+                  <option value="wednesday">Wednesday</option>
+                  <option value="thursday">Thursday</option>
+                  <option value="friday">Friday</option>
+                  <option value="saturday">Saturday</option>
+                </select>
+
+                <select name="hours">
+                  <option value="hour-select">Select Hour</option>
+                  <option value="10">10: 00</option>
+                  <option value="10">12: 00</option>
+                  <option value="10">14: 00</option>
+                  <option value="10">16: 00</option>
+                  <option value="10">18: 00</option>
+                  <option value="10">20: 00</option>
+                  <option value="10">22: 00</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Phone Number" />
+              </div>
+
+              <div class="form-row">
+                <input type="number" placeholder="How Many Persons?" min="1" />
+                <input type="submit" value="BOOK TABLE" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="back-to-top">
+          <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <div class="footer-content-about animate-top">
+          <h4>About Cafe</h4>
+          <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+            provident voluptatem consequuntur doloremque, possimus aut iste
+            magni facere repellendus quibusdam!
+          </p>
+        </div>
+        <div class="footer-content-divider animate-bottom">
+          <div class="social-media">
+            <h4>Follow along</h4>
+            <ul class="social-icons">
+              <li>
+                <a href=""><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="newsletter-container">
+            <h4>News Letter</h4>
+            <form action="" class="newsletter-form">
+              <input
+                type="text"
+                class="newsletter-input"
+                placeholder="Your email address"
+              />
+              <button class="newsletter-btn" type="submit">
+                <i class="fas fa-envelope"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
